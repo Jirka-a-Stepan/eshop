@@ -1,0 +1,4 @@
+.idea
+__pycache__
+eshop_project/__pycache__
+db.sqlite3
