@@ -1,0 +1,23 @@
+[
+  {
+    "model": "accounts.country",
+    "pk": 1,
+    "fields": {
+      "name": "Czech republic"
+    }
+  },
+  {
+    "model": "accounts.country",
+    "pk": 2,
+    "fields": {
+      "name": "Germany"
+    }
+  },
+  {
+    "model": "accounts.country",
+    "pk": 3,
+    "fields": {
+      "name": "Poland"
+    }
+  }
+]
