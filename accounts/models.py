@@ -3,6 +3,7 @@ import os
 from django.conf import settings
 from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.models import AbstractUser
+from django.core.files.storage import FileSystemStorage
 from django.db import models
 
 
@@ -35,8 +36,18 @@ class UserManager(BaseUserManager):
         return user
 
 
-def image_path():
-    return os.path.join(settings.BASE_DIR, 'images/avatars')
+class ImageAvatarStorage(FileSystemStorage):
+    def get_available_name(self, name, max_length=None):
+        # file must have the same extension as the file saved in database
+        # files avatar_1.jpg and avatar_1.jpeg are different files
+        if self.exists(name):
+            os.remove(os.path.join(settings.BASE_DIR, name))
+        return name
+
+
+def avatar_path(instance, filename):
+    ext = filename.split('.')[-1]
+    return f'images/avatars/avatar_{instance.pk}.{ext}'
 
 
 class User(AbstractUser):
@@ -48,8 +59,7 @@ class User(AbstractUser):
     street = models.CharField(max_length=150, null=True, blank=True)
     zip_code = models.CharField(max_length=10, null=True, blank=True)
     phone = models.CharField(max_length=15, null=True, blank=True)
-    avatar = models.FilePathField(path=image_path, null=True, blank=True)
-    # role (admin, user, manager - entity)
+    avatar = models.ImageField(upload_to=avatar_path, storage=ImageAvatarStorage(), null=True, blank=True)
     communication_channel = models.CharField(max_length=150, null=True, blank=True)
 
     USERNAME_FIELD = "email"
@@ -59,3 +69,4 @@ class User(AbstractUser):
     username = None
 
     objects = UserManager()
+
