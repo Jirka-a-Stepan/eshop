@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <h2>Registration form</h2>
+    <form method="post">
+        <div style="width: 275px;">
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+            <button style="float: right;" type="submit">Sign up</button>
+        </div>
+    </form>
+{% endblock %}

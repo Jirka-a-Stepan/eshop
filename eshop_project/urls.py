@@ -22,7 +22,7 @@ import products.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include("django.contrib.auth.urls")),
+    path('accounts/registration/', accounts.views.RegistrationFormView.as_view(), name='registration_form'),
     path('', products.views.ProductsView.as_view(), name='products'),
-    # path('accounts/signup', accounts.views.SignUpView.as_view(), name='signup')
 ]
 
