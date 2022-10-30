@@ -1,10 +1,14 @@
 import os
+from logging import getLogger
 
 from django.conf import settings
 from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.models import AbstractUser
+from django.core.exceptions import ValidationError
 from django.core.files.storage import FileSystemStorage
 from django.db import models
+
+LOGGER = getLogger()
 
 
 class Country(models.Model):
@@ -69,4 +73,3 @@ class User(AbstractUser):
     username = None
 
     objects = UserManager()
-
