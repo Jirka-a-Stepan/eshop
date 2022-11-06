@@ -1,4 +1,3 @@
-"""eshop_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -16,7 +15,11 @@ Including another URLconf
 import django
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.contrib.auth import views
 from django.urls import path, include
+from django.urls import path, include
+from products.views import tablet_views, mobile_views, ProductsView
+
 
 import accounts.views
 import products.views
