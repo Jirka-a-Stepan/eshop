@@ -1,17 +1,4 @@
-<!--
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Eshop</title>
-</head>
-<body>
-    {% block content %}
-    {% endblock %}
-</body>
-</html>
--->
-{% load static %}
+{% load static accounts_tags %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -256,6 +243,8 @@
   <!-- Start Promo section -->
   <!-- / Promo section -->
   <!-- Products section -->
+  {% block content %}
+  {% endblock %}
   <section id="aa-product">
     <div class="container">
       <div class="row">
@@ -1003,6 +992,8 @@
         <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h4>Login or Register</h4>
+        {% render_login %}
+<!--
           <form class="aa-login-form" action="">
             <label for="">Username or Email address<span>*</span></label>
             <input type="text" placeholder="Username or email">
@@ -1015,6 +1006,7 @@
               Don't have an account?<a href="account.html">Register now!</a>
             </div>
           </form>
+-->
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
