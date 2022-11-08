@@ -18,7 +18,7 @@ class RegistrationForm(UserCreationForm):
 class RegistrationFormView(CreateView):
     template_name = 'registration.html'
     form_class = RegistrationForm
-    success_url = reverse_lazy('registration_form')
+    success_url = reverse_lazy('login')
 
 
 class EditProfileView(UpdateView):

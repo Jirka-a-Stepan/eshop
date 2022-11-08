@@ -8,7 +8,7 @@
     <title>Daily Shop | Home</title>
     {% include 'main_head_links.html' %}
     {% include 'main_head_js.html' %}
-
+    <link href="{% static 'css/shop_style.css' %}" rel="stylesheet">
   </head>
   <body>
 
@@ -25,11 +25,12 @@
               <div class="aa-header-top-right">
                 <ul class="aa-head-top-nav-right">
                   {% if user.is_authenticated %}
+                      <li style="border-right: 1px solid #ddd; padding: 5px 8px; font-size: 14px;">{{ user.first_name }} {{ user.last_name }} ({{ user.email }}) </li>
                       <li><a href="#">My Account</a></li>
                       <li class="hidden-xs"><a href="#">My Cart</a></li>
                       <li><a href="{% url 'logout' %}">Logout</a></li>
                   {% else %}
-                      <li><a href="#">Register</a></li>
+                      <li><a href="{% url 'registration_form' %}">Register</a></li>
                       <li><a href="{% url 'login' %}">Login</a></li>
                   {% endif %}
                 </ul>
