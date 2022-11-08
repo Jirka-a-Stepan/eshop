@@ -21,3 +21,13 @@
     font-size: 12px;
     font-weight: bold;
 }
+
+.shop_register {
+    clear: both;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.shop_register a {
+    color: #ff6666;
+}
