@@ -1,13 +1,34 @@
 {% extends 'main.html' %}
 {%  block content %}
-    <h2>Edit profile</h2>
-    <form method="POST">
-    {% csrf_token %}
-    <div>
-        <table>
-        {{ form.as_table }}
-        </table>
-        <input type="submit" value="Save">
+    <div class="sh-center-form">
+        <h2>Edit profile</h2>
+        <form method="POST" class="sh-edit-form">
+            {% csrf_token %}
+            <div>
+                <h3>{{ form.email.value }}</h3>
+                <div class="avatar">{{ form.avatar }}</div>
+                <div class="last_login">
+                    <b>Last login:</b> {{ form.last_login.value }}
+                </div>
+                <label for="id_first_name">First name:</label>
+                {{ form.first_name }}
+                <label for="id_last_name">Last name:</label>
+                {{ form.last_name }}
+                <label for="id_street">Street:</label>
+                {{ form.street }}
+                <label for="id_city">City:</label>
+                {{ form.city }}
+                <label for="id_zip_code">Zip code:</label>
+                {{ form.zip_code }}
+                <label for="id_country">Country:</label>
+                {{ form.country }}
+                <label for="id_phone">Phone:</label>
+                {{ form.phone }}
+                <label for="id_communication_channel">Communication channel:</label>
+                {{ form.communication_channel }}
+                <button class="aa-browse-btn" type="submit">Save</button>
+            </div>
+        </form>
     </div>
-    </form>
+
 {% endblock %}
