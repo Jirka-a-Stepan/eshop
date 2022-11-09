@@ -22,12 +22,12 @@
     font-weight: bold;
 }
 
-.shop_register {
+.shop-register {
     clear: both;
     margin-top: 20px;
     padding-top: 10px;
 }
 
-.shop_register a {
+.shop-register a {
     color: #ff6666;
 }
