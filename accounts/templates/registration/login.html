@@ -1,19 +1,17 @@
-{% extends 'main.html' %}
-
-{% block content %}
     <div class="sh-center-form">
-        <h2>Login</h2>
         <form method="post" class="aa-login-form">
             <div>
                 {% csrf_token %}
-                {{ form }}
-                <button class="aa-browse-btn" type="submit">Sign up</button>
+                <form class="aa-login-form" action="{% url 'login' %}">
+                    <label for="">Email address<span>*</span></label>
+                    {{ form.email }}
+                    <label for="">Password<span>*</span></label>
+                    {{ form.password }}
+                    <button class="aa-browse-btn" type="submit">Login</button>
+                    <div class="aa-register-now">
+                      Don't have an account?<a href="{% url 'registration_form' %}">Register now!</a>
+                    </div>
+                  </form>
             </div>
         </form>
-        <div class="shop-register">
-            Don't have an account? <a href="{% url 'registration_form' %}">Register now!</a>
-        </div>
     </div>
-
-
-{% endblock %}

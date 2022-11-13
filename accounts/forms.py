@@ -79,3 +79,7 @@ class ProfileForm(ModelForm):
         widgets = {
             'avatar': ImageWidget
         }
+
+
+class MyLoginForm(forms.Form):
+    pass
