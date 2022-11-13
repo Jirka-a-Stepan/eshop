@@ -1,0 +1,17 @@
+
+        <form method="post" class="aa-login-form" action="{% url 'login' %}">
+
+                {% csrf_token %}
+                <label for="">Email address<span>*</span></label>
+                {{ form.username }}
+                <label for="">Password<span>*</span></label>
+                {{ form.password }}
+                <button class="aa-browse-btn" type="submit">Login</button>
+                <p class="aa-lost-password">&nbsp;</p>
+                <div class="aa-register-now">
+                    Don't have an account?<a href="{% url 'registration_form' %}">Register now!</a>
+                </div>
+
+        </form>
+
+

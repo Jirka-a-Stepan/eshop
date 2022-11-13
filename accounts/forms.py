@@ -1,6 +1,7 @@
 import posixpath
 
 from django import forms
+from django.contrib.auth.forms import AuthenticationForm
 from django.forms import ModelForm
 from django.utils.html import conditional_escape
 from django.utils.safestring import mark_safe
@@ -81,5 +82,3 @@ class ProfileForm(ModelForm):
         }
 
 
-class MyLoginForm(forms.Form):
-    pass

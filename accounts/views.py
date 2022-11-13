@@ -1,10 +1,11 @@
 from django.contrib import messages
-from django.contrib.auth import forms, authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth.views import LoginView
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, UpdateView
+from django.views import View
+from django.views.generic import CreateView, UpdateView, TemplateView
+from django.views.generic.edit import FormMixin
 
 from accounts.forms import ProfileForm
 from accounts.models import User
@@ -28,20 +29,25 @@ class EditProfileView(UpdateView):
     form_class = ProfileForm
     success_url = reverse_lazy("products")
 
-def login_request(request):
-    if request.method == "POST":
-        form = AuthenticationForm(request, data=request.POST)
-        if form.is_valid():
-            email = form.cleaned_data('email')
-            password = form.cleaned_data('password')
-            user = authenticate(email=email, password=password)
-            if user is not None:
-                login(request, user)
-                messages.info(request, f"You are now logged in as {email}.")
-                return redirect('products')
-            else:
-                messages.error(request, "Invalid email or password")
-        else:
-            messages.error(request, "Invalid email or password")
-        form = AuthenticationForm()
-        return render(request=request, template_name="registration/login.html", context={"form": form})
+
+class LoginView(FormMixin, TemplateView):
+    template_name = 'products/products.html'
+    form_class = AuthenticationForm
+
+    def post(self, request, *args, **kwargs):
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(request, username=username, password=password)
+        if user:
+            login(request, user)
+            messages.success(request, 'Login successfully')
+            return redirect('products')
+        messages.error(request, 'Wrong credentials')
+        return redirect('products')
+
+
+class LogoutView(View):
+
+    def get(self, request, *args, **kwargs):
+        logout(request)
+        return redirect('products')
