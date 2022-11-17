@@ -7,8 +7,6 @@
     <br>
     {{ widget.input_text }}:
 {% else %}
-    <div>
-        <img src="/media/images/avatars/noavatar.jpg" height=150 width="150" alt="No avatar">
-    </div>
+    <img class="avatar" src="/media/images/avatars/noavatar.jpg" height=150 width="150" alt="No avatar">
 {% endif %}
 <input type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
