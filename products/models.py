@@ -22,21 +22,21 @@ class OperationSystem(models.Model):
 
 
 class MobileStandard(models.Model):
-    name = models.CharField(max_length=5)
+    name = models.CharField(max_length=10)
 
     def __str__(self):
         return self.name
 
 
 class SupportedEbookFormat(models.Model):
-    name = models.CharField(max_length=5)
+    name = models.CharField(max_length=10)
 
     def __str__(self):
         return self.name
 
 
 class SimType(models.Model):
-    name = models.CharField(max_length=5)
+    name = models.CharField(max_length=15)
 
     def __str__(self):
         return self.name
