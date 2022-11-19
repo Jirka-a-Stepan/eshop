@@ -1,0 +1,278 @@
+[
+{
+  "model": "products.producer",
+  "pk": 1,
+  "fields": {
+    "name": "Apple",
+    "alias": "apple"
+  }
+},
+{
+  "model": "products.producer",
+  "pk": 2,
+  "fields": {
+    "name": "Samsung",
+    "alias": "samsung"
+  }
+},
+{
+  "model": "products.producer",
+  "pk": 3,
+  "fields": {
+    "name": "Xiaomi",
+    "alias": "xiaomi"
+  }
+},
+{
+  "model": "products.operationsystem",
+  "pk": 1,
+  "fields": {
+    "name": "Google Android"
+  }
+},
+{
+  "model": "products.operationsystem",
+  "pk": 2,
+  "fields": {
+    "name": "Apple iOS"
+  }
+},
+{
+  "model": "products.operationsystem",
+  "pk": 3,
+  "fields": {
+    "name": "Windows Mobile"
+  }
+},
+{
+  "model": "products.mobilestandard",
+  "pk": 1,
+  "fields": {
+    "name": "GSM"
+  }
+},
+{
+  "model": "products.mobilestandard",
+  "pk": 2,
+  "fields": {
+    "name": "GPRS"
+  }
+},
+{
+  "model": "products.mobilestandard",
+  "pk": 3,
+  "fields": {
+    "name": "EDGE"
+  }
+},
+{
+  "model": "products.mobilestandard",
+  "pk": 4,
+  "fields": {
+    "name": "3G UMTS"
+  }
+},
+{
+  "model": "products.mobilestandard",
+  "pk": 5,
+  "fields": {
+    "name": "4G LTE"
+  }
+},
+{
+  "model": "products.mobilestandard",
+  "pk": 6,
+  "fields": {
+    "name": "5G NR"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 1,
+  "fields": {
+    "name": "ASCM"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 2,
+  "fields": {
+    "name": "BMP"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 3,
+  "fields": {
+    "name": "CBR"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 4,
+  "fields": {
+    "name": "CBZ"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 5,
+  "fields": {
+    "name": "DJVU"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 6,
+  "fields": {
+    "name": "DOC"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 7,
+  "fields": {
+    "name": "DOCX"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 8,
+  "fields": {
+    "name": "EPUB"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 9,
+  "fields": {
+    "name": "EPUB (DRM)"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 10,
+  "fields": {
+    "name": "FB2"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 11,
+  "fields": {
+    "name": "FB2.ZIP"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 12,
+  "fields": {
+    "name": "HTM"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 13,
+  "fields": {
+    "name": "HTML"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 14,
+  "fields": {
+    "name": "CHM"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 15,
+  "fields": {
+    "name": "JPEG"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 16,
+  "fields": {
+    "name": "MOBI"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 17,
+  "fields": {
+    "name": "PDF"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 18,
+  "fields": {
+    "name": "PDF (DRM)"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 19,
+  "fields": {
+    "name": "PNG"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 20,
+  "fields": {
+    "name": "PRC"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 21,
+  "fields": {
+    "name": "RTF"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 22,
+  "fields": {
+    "name": "TIFF"
+  }
+},
+{
+  "model": "products.supportedebookformat",
+  "pk": 23,
+  "fields": {
+    "name": "TXT"
+  }
+},
+{
+  "model": "products.simtype",
+  "pk": 1,
+  "fields": {
+    "name": "Mini SIM"
+  }
+},
+{
+  "model": "products.simtype",
+  "pk": 2,
+  "fields": {
+    "name": "Micro SIM"
+  }
+},
+{
+  "model": "products.simtype",
+  "pk": 3,
+  "fields": {
+    "name": "Nano SIM"
+  }
+},
+{
+  "model": "products.simtype",
+  "pk": 4,
+  "fields": {
+    "name": "eSIM"
+  }
+}
+]
