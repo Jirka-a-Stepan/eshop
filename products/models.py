@@ -59,15 +59,16 @@ class Product(models.Model):
         choices=ProductType.choices,
         default=None
     )
+
+    # if is_published is True alias is not possible to change
+    is_published = models.BooleanField(default=False)
+
     producer = models.ForeignKey(Producer, on_delete=models.RESTRICT)
     alias = models.CharField(
         max_length=210,
         unique=True
-    )  # bude pouzito v odkazu na detail, automaticky generovane
-    product_number = models.CharField(
-        unique=True,
-        max_length=8
-    )  # bude pouzito v objednavce a fakture, automaticky generovane
+    )
+
     description = models.TextField()
     images = models.ImageField(
         upload_to=product_path,
@@ -101,7 +102,7 @@ class Product(models.Model):
         null=True,
         blank=True
     )
-    touched_display = models.BinaryField(
+    touched_display = models.BooleanField(
         default=True
     )
     supported_ebook_formats = models.ManyToManyField(
