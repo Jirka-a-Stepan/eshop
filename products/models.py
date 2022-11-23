@@ -95,8 +95,8 @@ class Product(models.Model):
         null=True,
         blank=True
     )
-    mobile_standards = models.ManyToManyField(MobileStandard)
-    sim_type = models.ManyToManyField(SimType)
+    mobile_standards = models.ManyToManyField(MobileStandard, blank=True)
+    sim_type = models.ManyToManyField(SimType, blank=True)
     sim_number = models.PositiveSmallIntegerField(
         default=0,
         null=True,

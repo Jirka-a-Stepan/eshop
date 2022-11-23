@@ -1,0 +1,174 @@
+[
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "name": "Xiaomi Redmi 9A, 2GB/32GB, Peacock Green",
+    "product_type": "mobile",
+    "is_published": false,
+    "producer": 3,
+    "alias": "xiaomi-redmi-9a--2gb-32gb--peacock-green",
+    "description": "Nový Redmi 9A opět cílí na běžné, nenáročné uživatele, kterým nabídne skvělý poměr ceny a funkcí. Můžete se těšit na slušný výkon, oblíbené funkce a velmi dlouhou výdrž baterie. To je Redmi 9A s příjemnou cenovkou a novým designem.",
+    "images": "images/products/product_1.webp",
+    "stock": 10,
+    "prize": 2390,
+    "height": 165,
+    "width": 77,
+    "depth": 9,
+    "weight": 194,
+    "insert_date": "2022-11-22",
+    "display_size": "6.5",
+    "internal_memory": 32,
+    "battery_capacity": 5000,
+    "operation_system": 1,
+    "sim_number": 0,
+    "touched_display": true,
+    "mobile_standards": [
+      1,
+      4,
+      5
+    ],
+    "sim_type": [
+      3
+    ],
+    "supported_ebook_formats": []
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "name": "Xiaomi Redmi A1, 2GB/32GB, Light Blue",
+    "product_type": "mobile",
+    "is_published": false,
+    "producer": 3,
+    "alias": "xiaomi-redmi-a1--2gb-32gb--light-blue-",
+    "description": "Mobilní telefon s unikátním designem texturované kůže, která dodává telefonu šmrnc a nádech luxusu. Telefon je vhodný pro nenáročné uživatele, kteří netouží po těch nejnovějších trendy modelech.",
+    "images": "images/products/product_2.webp",
+    "stock": 6,
+    "prize": 2249,
+    "height": 165,
+    "width": 77,
+    "depth": 9,
+    "weight": 192,
+    "insert_date": "2022-11-23",
+    "display_size": "6.5",
+    "internal_memory": 32,
+    "battery_capacity": 5000,
+    "operation_system": null,
+    "sim_number": 0,
+    "touched_display": true,
+    "mobile_standards": [
+      2,
+      4,
+      5
+    ],
+    "sim_type": [
+      3
+    ],
+    "supported_ebook_formats": []
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "name": "Apple iPhone SE 2020, 64GB, Black",
+    "product_type": "mobile",
+    "is_published": false,
+    "producer": 1,
+    "alias": "apple-iphone-se-2020--64gb--black-",
+    "description": "Velmi oblíbený iPhone SE je zpět v plné parádě. Nový iPhone SE sází na stejný koncept jako předchůdce a využívá osvědčený design, tentokrát vychází z iPhone 8. Takže si zachovává kompaktní konstrukci řady SE a zařazuje na nejvyšší rychlost, kterou znáte z iPhone 11.",
+    "images": "images/products/product_None.webp",
+    "stock": 5,
+    "prize": 9990,
+    "height": 138,
+    "width": 67,
+    "depth": 7,
+    "weight": 148,
+    "insert_date": "2022-11-23",
+    "display_size": "4.7",
+    "internal_memory": 64,
+    "battery_capacity": 1821,
+    "operation_system": 2,
+    "sim_number": 0,
+    "touched_display": true,
+    "mobile_standards": [
+      1,
+      4,
+      5
+    ],
+    "sim_type": [
+      3,
+      4
+    ],
+    "supported_ebook_formats": []
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "name": "Apple iPhone 12 mini, 64GB, Blue",
+    "product_type": "mobile",
+    "is_published": false,
+    "producer": 1,
+    "alias": "apple-iphone-12-mini--64gb--blue-",
+    "description": "iPhone 12 přichází ještě lepší než kdy dříve. Můžete vybírat hned ze čtyř modelů. Chcete malé řešení, berte 12 mini, klasikou bude 12 a pro nejnáročnější je zde 12 Pro a Pro Max. Vždy dostanete to, co vám nejlépe sedne.",
+    "images": "images/products/product_None_LzYN38w.webp",
+    "stock": 2,
+    "prize": 15461,
+    "height": 132,
+    "width": 64,
+    "depth": 7,
+    "weight": 135,
+    "insert_date": "2022-11-23",
+    "display_size": "5.4",
+    "internal_memory": 64,
+    "battery_capacity": 2227,
+    "operation_system": 2,
+    "sim_number": 0,
+    "touched_display": true,
+    "mobile_standards": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "sim_type": [
+      3,
+      4
+    ],
+    "supported_ebook_formats": []
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "name": "Samsung Galaxy Tab A7 Lite SM-T220, 3GB/32GB, Gray",
+    "product_type": "tablet",
+    "is_published": false,
+    "producer": 2,
+    "alias": "samsung-galaxy-tab-a7-lite-sm-t220--3gb-32gb--gray-",
+    "description": "Samsung Galaxy Tab A7 Lite je výkonný dotykový tablet s obrazovkou plnou jasných a bohatých barev, se kterým můžete surfovat na internetu, hrát hry, tvořit dokumenty, psát nebo kreslit. Vše funguje plynule bez sekání a trhání. Všechny tyto funkce rozšiřují Vaše možnosti, jak můžete trávit svůj volný čas.",
+    "images": "images/products/product_5.jpg",
+    "stock": 15,
+    "prize": 3590,
+    "height": 125,
+    "width": 213,
+    "depth": 8,
+    "weight": 366,
+    "insert_date": "2022-11-23",
+    "display_size": "8.7",
+    "internal_memory": 32,
+    "battery_capacity": 5100,
+    "operation_system": 1,
+    "sim_number": 0,
+    "touched_display": true,
+    "mobile_standards": [],
+    "sim_type": [],
+    "supported_ebook_formats": []
+  }
+}
+]
